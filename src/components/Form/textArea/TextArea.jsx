@@ -1,21 +1,18 @@
 import "./textArea.scss"
 import PropTypes from "prop-types";
 
-const TextArea = ({label, id, placeholder}) => {
+const TextArea = ({label, ...rest}) => {
 
   return (
     <>
-      <label htmlFor={id}>{label}</label>
-      <textarea id={id} placeholder={placeholder} />
+      <label>{label}</label>
+      <textarea {...rest} />
     </>
   )
 }
 
 TextArea.propTypes = {
   label: PropTypes.string,
-  type: PropTypes.string,
-  id: PropTypes.string,
-  placeholder: PropTypes.string,
 }
 
 

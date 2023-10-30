@@ -1,14 +1,25 @@
 import styles from "./button.module.scss";
 import PropTypes from "prop-types";
 
-const Button = ({text}) => {
+const Button = ({label, color, ...rest}) => {
+  
+  let buttonClass = '';
+  switch(color){
+    case "outline":
+      buttonClass = styles.outline;
+      break;
+    default:
+      buttonClass = styles.solid
+  }
+
   return (
-    <button className={styles.button}>{text}</button>
+    <button {...rest} className={buttonClass}> {label} </button>
   )
 }
 
 Button.propTypes = {
-  text: PropTypes.string,
+  label: PropTypes.string,
+  color: PropTypes.string,
 }
 
 export default Button;

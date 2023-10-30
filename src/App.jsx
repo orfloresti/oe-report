@@ -7,7 +7,6 @@ function App() {
   const [result, setResult] = useState();
   const handleSubmit = (form) => {
     console.log(form);
-    setResult('Test');
   }
 
   return (

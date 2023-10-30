@@ -1,18 +1,41 @@
 @import "../../../styles/colors.scss";
 
-.button {
+button {
   border: none;
-  background-color: $danube-500;
-  color: white;
   border-radius: 0.5rem;
   padding: 0.8rem;
+  margin: 0.1rem;
   font-size: 1rem;
 }
 
-.button:hover {
+.solid {
+  background-color: $danube-500;
+  color: white;
+}
+
+.solid:hover {
   background-color: $danube-600;
 }
 
-.button:active {
+.solid:active {
   background-color: $danube-700;
 }
+
+.outline {
+  background-color: inherit;
+  color: $danube-700;
+  border: 1px solid $danube-700;
+}
+
+.outline:hover {
+  background-color: $danube-50;
+  color: $danube-700;
+  border: 1px solid $danube-700;
+}
+
+.outline:active {
+  background-color: $danube-100;
+  color: $danube-700;
+  border: 1px solid $danube-700;
+}
+

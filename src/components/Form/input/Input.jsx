@@ -1,21 +1,18 @@
 import "./input.module.scss";
 import PropTypes from "prop-types";
 
-const Input = ({label, type, id, placeholder}) => {
+const Input = ({label, ...rest }) => {
 
     return (
       <>
-        <label htmlFor={id}>{label}</label>
-        <input type={type} id={id} placeholder={placeholder}/>
+        <label>{label}</label>
+        <input {...rest}/>
       </>
     )
 }
 
 Input.propTypes = {
-  label: PropTypes.string,
-  type: PropTypes.string,
-  id: PropTypes.string,
-  placeholder: PropTypes.string,
+  label: PropTypes.string
 }
 
 export default Input;
