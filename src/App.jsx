@@ -13,7 +13,7 @@ function App() {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <Card title="Open English Reporter">
+        <Card title="Open English Report">
           <Form onSubmit={handleSubmit}/>
         </Card>
         {result ? <Card title="Results"></Card> : null}
