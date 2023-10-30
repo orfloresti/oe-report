@@ -1,0 +1,21 @@
+@import "../../styles/colors.scss";
+
+.cardWrapper {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 800px;
+  color: $danube-900;
+  margin-top: 1rem;
+}
+
+.cardTitle {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: $danube-900;
+}

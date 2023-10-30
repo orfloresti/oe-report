@@ -1,0 +1,18 @@
+@import "../../../styles/colors.scss";
+
+.button {
+  border: none;
+  background-color: $danube-500;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.button:hover {
+  background-color: $danube-600;
+}
+
+.button:active {
+  background-color: $danube-700;
+}
