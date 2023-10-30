@@ -1,26 +1,34 @@
 import Button from "./button/Button";
 import styles from "./form.module.scss";
+import Input from "./input/Input";
+import TextArea from "./textArea/TextArea";
 
 const Form = () => {
-  return(
+  return (
     <form className={styles.form}>
-      <label htmlFor="startDate">Start date</label>
-      <input type="date" id="startDate"/>
+      <Input label="Start date" id="startDate" type="date" />
 
-      <label htmlFor="endDate">End date</label>
-      <input type="date" id="endDate"/>
+      <Input label="End date" id="endDate" type="date" />
 
-      <label htmlFor="userId">User ID</label>
-      <input type="text" id="userId"/>
-      
-      <label htmlFor="token">Token</label>
-      <textarea id="token"/>
-      
+      <Input
+        label="Person Id"
+        id="personId"
+        type="text"
+        placeholder="Type person Id ..."
+      />
+
+      <TextArea
+        label="Person Id"
+        id="personId"
+        type="text"
+        placeholder="Type token ..."
+      />
+
       <section className={styles.actions}>
-        <Button text="Submit"/>
+        <Button text="Submit" />
       </section>
     </form>
-  )
-}
+  );
+};
 
-export default Form
+export default Form;

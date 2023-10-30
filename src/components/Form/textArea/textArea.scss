@@ -1,0 +1,19 @@
+@import "../../../styles/colors.scss";
+
+textArea {
+  border: 1px solid $zinc-300;
+  padding: .5rem;
+  border-radius: .5rem;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.2rem;
+  resize: vertical;
+  min-height: 200px;
+  outline: none;
+  color: $danube-900;
+}
+
+textArea:focus {
+  border: 0.15rem solid $danube-500;
+}
